@@ -1,0 +1,716 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: #1B9A8E;
+}
+
+#main {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+
+#header {
+    flex-grow: 2;
+}
+
+#topContacts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 2vh;
+    padding: 2vh 0 0 0;
+}
+
+#topContacts li {
+    margin: 1vw;
+    padding: 2px;
+    background: #40ac9f;
+}
+
+#topContacts li a {
+    text-decoration: none;
+}
+
+#topContacts li a:hover {
+    text-decoration: underline;
+}
+
+.white-text {
+    color: #173c56;
+}
+
+.orange-text {
+    color: white;
+    padding: 0 1vw 0 0;
+}
+
+#header img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    box-sizing: border-box;
+    border: 5px solid white;
+    position: relative;
+    left: 8vw;
+}
+
+#name {
+    font-size: 10vw;
+    width: 50vw;
+    float: right;
+    position: relative;
+    top: 8vw;
+    right: 8vw;
+    line-height: 8vw;
+    text-transform: uppercase;
+    color: #173c56;
+}
+
+#role {
+    font-size: 4.6vw;
+    position: relative;
+    top: 25vw;
+    left: 42vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+}
+
+.welcome-message {
+    display: block;
+    font-size: 8vw;
+    color: white;
+    position: relative;
+    top: 6.5vh;
+    font-weight: 200;
+    background: #40ac9f;
+    margin: auto;
+    text-align: center;
+    width: 66vw;
+}
+
+.welcome-message:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-bottom: 4vw solid #40ac9f;
+    top: -3.5vw;
+}
+
+#skills-h3 {
+    text-align: center;
+    position: relative;
+    top: 12vh;
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: #173c56;
+}
+
+#skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 2vh;
+    padding: 2vh 0 0 0;
+    position: relative;
+    top: 13vh;
+}
+
+#skills li {
+    margin: 1vw;
+    padding: 2px;
+    background: #40ac9f;
+}
+
+#skills .white-text {
+    color: white;
+    font-size: 3vw;
+}
+
+#workExperience {
+    flex-grow: 1;
+    width: 100%;
+    background: #434343;
+    margin-top: 18vh;
+}
+
+#workExperience h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-left: 8vw;
+    padding-top: 2vh;
+    color: #40ac9f;
+}
+
+.work-entry {
+    margin-left: 8vw;
+    padding-top: 2vh;
+    color: #40ac9f;
+}
+
+.work-entry .name {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4vw;
+    padding: 0;
+}
+
+.work-entry .title {
+    padding: 0;
+    font-size: 3vw;
+}
+
+.work-entry .date-text {
+    font-size: 3vw;
+}
+
+.work-entry p {
+    padding-bottom: 5vh;
+    font-size: 3vw;
+}
+
+.work-entry .location-text {
+    color: white;
+    font-weight: 800;
+    font-size: 3vw;
+    padding-top: 2vh;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+}
+
+#projects {
+    flex-grow: 1;
+    padding-left: 8vw;
+    padding-bottom: 10vw;
+    background: #40ac9f;
+}
+
+#projects h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    padding: 2vh 0 2vh 0;
+    color: #173c56;
+}
+
+.project-entry {
+    margin-top: 2vh;
+}
+
+.project-entry .title {
+    font-size: 5vw;
+    font-weight: 800;
+    letter-spacing: 0.2vw;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -12vw;
+}
+
+.project-entry p {
+    width: 55vw;
+    font-size: 3vw;
+    color: white;
+    margin-top: -11vw;
+    margin-left: 32vw;
+}
+
+.project-entry img {
+    max-width: 25vw;
+    max-height: 25vw;
+    border-radius: 13vw;
+    border: 5px solid #6BC1B7;
+}
+
+.project-entry .date-text {
+    position: relative;
+    color: #6BC1B7;
+    font-size: 5vw;
+    font-weight: 200;
+    margin-left: 32vw;
+}
+
+#education {
+    flex-grow: 1;
+    width: 100%;
+    background: #434343;
+    padding-bottom: 5vh;
+}
+
+#education h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-left: 8vw;
+    padding-top: 2vh;
+    color: #40ac9f;
+}
+
+#education h3 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    color: #40ac9f;
+}
+
+.education-entry {
+    margin-left: 8vw;
+    padding-top: 4vw;
+}
+
+.education-entry .location-text {
+    color: white;
+    font-weight: 800;
+    font-size: 3vw;
+    padding-top: 2vh;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+}
+
+.education-entry .title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.education-entry p {
+    padding-top: 1vh;
+    color: #40ac9f;
+    font-size: 3vw;
+}
+
+.education-entry .date-text {
+    position: relative;
+    color: #6BC1B7;
+    font-size: 3vw;
+    font-weight: 200;
+    padding-bottom: 3vw;
+}
+
+.education-entry a {
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+.education-entry a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    display: block;
+    height: 80vw;
+    width: 80vw;
+    border-radius: 45vw;
+    margin: auto;
+    border: 10px solid #6BC1B7;
+    margin-top: 5vh;
+}
+
+#mapDiv {
+    flex-grow: 1;
+    background: #40ac9f;
+    padding-bottom: 8vw;
+}
+
+#mapDiv h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    padding-top: 5vh;
+    color: #173c56;
+    text-align: center;
+}
+
+#lets-connect {
+    border-bottom: 20px solid #173c56;
+    box-sizing: border-box;
+}
+
+#lets-connect h2 {
+    display: block;
+    font-size: 8vw;
+    color: white;
+    position: relative;
+    top: 6.5vh;
+    font-weight: 200;
+    background: #40ac9f;
+    margin: auto;
+    text-align: center;
+    width: 66vw;
+}
+
+#lets-connect h2:hover {
+    color: #173c56;
+    cursor: pointer;
+}
+
+#lets-connect h2 span {
+    position: absolute;
+    width: 0;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 4vw solid #40ac9f;
+    left: 3vw;
+    bottom: -3.9vw;
+    transition: left 0.2s ease-in;
+}
+
+#footerContacts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 2vh;
+    margin-top: 12vh;
+    padding-bottom: 5vh;
+}
+
+#footerContacts li {
+    display: none;
+    margin: 1vw;
+    padding: 2px;
+    background: #40ac9f;
+}
+
+#footerContacts li a {
+    text-decoration: none;
+}
+
+#footerContacts li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:960px) {
+    #main {
+        flex-flow: row wrap;
+        align-content: flex-start;
+    }
+
+    .welcome-message {
+        font-size: 6vw;
+        width: 48vw;
+    }
+
+    #skills-h3 {
+        font-size: 3vw;
+    }
+
+    #skills .white-text {
+        font-size: 2vw;
+    }
+
+    #education {
+        width: 50%;
+    }
+
+    #education p {
+        font-size: 2vw;
+    }
+
+    #education .title {
+        font-size: 3vw;
+    }
+
+    #education a {
+        font-size: 2vw;
+    }
+
+    #education h3 {
+        font-size: 4vw;
+    }
+
+    #education .location-text {
+        font-size: 2vw;
+    }
+
+    #workExperience {
+        width: 50%;
+        background: #40ac9f;
+    }
+
+    #workExperience h2 {
+        color: #173c56;
+    }
+
+    #workExperience .name {
+        color: white;
+        font-size: 4vw;
+    }
+
+    #workExperience .date-text {
+        color: #173c56;
+        font-size: 2vw;
+    }
+
+    #workExperience .location-text {
+    }
+
+    #workExperience p {
+        color: #173c56;
+        font-size: 2vw;
+    }
+
+    .work-entry {
+        padding-top: 5vh;
+    }
+
+    #projects {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        margin-top: 18vh;
+        background: #434343;
+    }
+
+    #projects img {
+        margin-left: 25%;
+    }
+
+    #projects h2 {
+        color: #40ac9f;
+        margin-left: 8vw;
+    }
+
+    #projects .title {
+        font-size: 3vw;
+    }
+
+    #projects p {
+        width: 40vw;
+        margin: 0;
+        top: 0;
+        margin-left: 8vw;
+        font-size: 2vw;
+    }
+
+    #projects .date-text {
+        font-size: 3vw;
+        padding-bottom: 8vh;
+        margin-left: 8vw;
+    }
+
+    #mapDiv {
+        width: 50%;
+        background: #40ac9f;
+    }
+
+    #mapDiv #map {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 25vw;
+    }
+
+    #mapDiv h2 {
+        padding-top: 2vh;
+    }
+
+    #lets-connect {
+        width: 100vw;
+    }
+
+    #lets-connect h2 {
+        width: 50vw;
+        margin: auto;
+        font-size: 5vw;
+    }
+
+    #footerContacts {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    #main {
+        flex-flow: row wrap;
+        align-content: flex-start;
+    }
+
+    #header img {
+        width: 25vw;
+        height: 25vw;
+        left: 12vw;
+    }
+
+    #education {
+        margin-top: 18vh;
+        width: 25%;
+        padding: 0;
+    }
+
+    #education p {
+        font-size: 1vw;
+    }
+
+    #education .title {
+        font-size: 1.5vw;
+    }
+
+    #education a {
+        font-size: 1vw;
+    }
+
+    #education h2 {
+        font-size: 3vw;
+        margin: auto;
+        text-align: center;
+    }
+
+    #education h3 {
+        font-size: 2vw;
+    }
+
+    #education .location-text {
+        font-size: 1vw;
+    }
+
+    #education .date-text {
+        font-size: 1vw;
+        padding: 0;
+    }
+
+    .education-entry {
+        margin-left: 4vw;
+        padding: 0;
+    }
+
+    #workExperience {
+        width: 25%;
+        background: #434343;
+    }
+
+    #workExperience h2 {
+        font-size: 3vw;
+        margin-left: 4vw;
+        color: #1B9A8E;
+    }
+
+    #workExperience .name {
+        color: white;
+        font-size: 2vw;
+    }
+
+    #workExperience .date-text {
+        color: #1B9A8E;
+        font-size: 1vw;
+    }
+
+    #workExperience p {
+        color: #1B9A8E;
+        font-size: 1vw;
+    }
+
+    #workExperience .location-text {
+        font-size: 1vw;
+    }
+
+    .work-entry {
+        padding-top: 5vh;
+        margin-left: 4vw;
+    }
+
+    #projects {
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        margin-top: 18vh;
+        background: #40ac9f;
+    }
+
+    #projects img {
+        margin-left: 11%;
+        width: 75%;
+        border: 10px solid #6BC1B7;
+    }
+
+    #projects h2 {
+        color: #173c56;
+        margin: auto;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    #projects .title {
+        font-size: 3vw;
+    }
+
+    #projects p {
+        width: 18vw;
+        margin: 0;
+        top: 0;
+        margin-left: 4vw;
+        font-size: 1vw;
+    }
+
+    #projects .date-text {
+        font-size: 2vw;
+        margin-left: 4vw;
+        padding: 0;
+    }
+
+    #mapDiv {
+        background: #40ac9f;
+        margin-top: 18vh;
+        width: 25%;
+        padding-bottom: 5vw;
+    }
+
+    #mapDiv #map {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 15vw;
+    }
+
+    #mapDiv h2 {
+        font-size: 3vw;
+        padding-top: 2vh;
+    }
+
+    #lets-connect {
+        width: 100vw;
+    }
+
+    #lets-connect h2 {
+        width: 18vw;
+        margin: auto;
+        font-size: 1.5vw;
+        padding: 0.5vw 0 0.5vw 0;
+    }
+
+    #lets-connect h2 span {
+        border-left: 1vw solid transparent;
+        border-right: 1vw solid transparent;
+        border-top: 1vw solid #40ac9f;
+        bottom: -0.9vw;
+    }
+
+    #footerContacts {
+        margin-top: 10vh;
+    }
+}
