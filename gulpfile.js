@@ -15,7 +15,7 @@ gulp.task('start', function(){
 
 	gulp.src('src/*.html')
 		.pipe(minify())
-		.pipe(gulp.dest('dest'));
+		.pipe(gulp.dest('dist'));
 
 	gulp.src('src/views/*.html')
 		.pipe(minify())
@@ -33,7 +33,7 @@ gulp.task('start', function(){
 		.pipe(imagify())
 		.pipe(gulp.dest('dist/views/images'));
 
-	gulp.src('src/img/*.jpg')	
+	gulp.src('src/img/*.jpg')
 		.pipe(imagify())
 		.pipe(gulp.dest('dist/img'));
 

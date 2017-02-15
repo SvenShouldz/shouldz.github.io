@@ -2,7 +2,7 @@
   "name": "p4_weboptimization",
   "version": "1.0.0",
   "description": "Website Performance Optimization",
-  "main": "dest/index.html",
+  "main": "dist/index.html",
   "dependencies": {
     "gulp": "^3.9.1"
   },
