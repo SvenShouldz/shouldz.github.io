@@ -1,0 +1,29 @@
+{
+  "name": "p4_weboptimization",
+  "version": "1.0.0",
+  "description": "Website Performance Optimization",
+  "main": "dest/index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-uglify": "^2.0.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shouldz/shouldz.github.io.git"
+  },
+  "author": "Udacity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shouldz/shouldz.github.io/issues"
+  },
+  "homepage": "https://github.com/shouldz/shouldz.github.io#readme"
+}

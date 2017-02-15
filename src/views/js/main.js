@@ -450,14 +450,16 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-		var container = document.getElementsByClassName("randomPizzaContainer");
+
+		// Moved variables out of the for-loop, this should lower the DOM searches for the container and the variables are not re-created every loop.
+		var width, container = document.getElementsByClassName("randomPizzaContainer");
 		var length = container.length;
 		var offset = container[0].offsetWidth;
 		var dx = determineDx(container[0], size);
 
     for (var i = 0; i < length; i++) {
-      var newwidth = ( offset + dx) + 'px';
-      container[i].style.width = newwidth;
+      width = ( offset + dx) + 'px';
+      container[i].style.width = width;
     }
   }
 
@@ -506,9 +508,13 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
-  for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+	// Same as changePizzaSizes i moved the variables out of the for-loop to not re-create every variable and lower the DOM searches
+  var phase, items = document.getElementsByClassName('mover');
+	var length = items.length
+	var scrollTop = document.body.scrollTop / 1250
+
+  for (var i = 0; i < length; i++) {
+    phase = Math.sin( scrollTop + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -529,7 +535,13 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+
+	// Calculates the amount of Pizza images fitting in the window. This should render less pizzas than 200 and speeds up the loading.
+	var eWidth = 74;
+	var eHeight = 100;
+	var pizzas = window.innerWidth / eWidth + window.innerHeight / eHeight;
+
+  for (var i = 0; i < pizzas; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
