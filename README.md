@@ -60,12 +60,12 @@ You can find all the optimized files in the "dist" folder.
 		- changed image-src to the local images from img/
 
 	Main.js
-	- replaced querySelectorAll to getElementsByClassName or getElementById
-	- refactored changePizzaSizes() and updatePositions(), moved variables out of the for-loop to get better performance
-	- At the end i did a calculation for sliding pizza background, it calculates how many pizzas can fit the screen and not 200.
+		- replaced querySelectorAll to getElementsByClassName or getElementById
+		- refactored changePizzaSizes() and updatePositions(), moved variables out of the for-loop to get better performance
+		- At the end i did a calculation for sliding pizza background, it calculates how many pizzas can fit the screen and not 200.
 
 	pizza.html
-	- inlined css for faster loading
+		- inlined css for faster loading
 
 	I also added some comments into the code.
 
